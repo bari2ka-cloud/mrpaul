@@ -2,68 +2,333 @@
 <html lang="en">
 
 <head>
-    <title>website2ka</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="style.css">
+    <title>MrPaul | Web Design & Development</title>   
 </head>
 
 <body>
+
     <div class="main">
         <div class="navbar">
             <div class="icon">
                 <h2 class="logo">MrPaul</h2>
             </div>
-
             <div class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                    <li><a href="#" data-page="about" class="nav-link">About</a></li>
+                    <li><a href="#" data-page="service" class="nav-link">Service</a></li>
+                    <li><a href="#" data-page="design" class="nav-link">Design</a></li>
+                    <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
-
             <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
-                <a href="#"> <button class="btn">Search</button></a>
+                <input class="srch" type="search" placeholder="Type to search" id="searchInput">
+                <button class="btn" id="searchBtn">Search</button>
             </div>
         </div>
 
         <div class="content">
-            <h1>Web Design & <br><span>Development</span> <br>Course</h1>
-            <p class="par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Corrupti repudiandae sed
-                numquam,
-                aliquam inventore placeat id <br>animi sint excepturi beatae esse laudantium ducimus <br> voluptates
-                nulla saepe fugiat provident ut. Similique?
-
-                Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Sunt neque
-                expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit
-                <br> a quae totam ipsa illum minus laudantium ?
-            </p>
-            <button class="cn"><a href="#">JOIN US</a></button>
-
-            <div class="form">
-                <h2>Login Here</h2>
-                <input type="email" name="email" placeholder="Enter Email Here">
-                <input type="password" name="" placeholder="Enter Your Password Here">
-                <button class="btnn"><a href="#">Login</a></button>
-                <p class="link">Don't have an account<br>
-                    <a href="#">Sign up here</a>
-                </p>
-                <p class="liw">Log in with</p>
-
-                <div class="icon">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+            <!-- HOME section (visible by default) -->
+            <div id="home" class="page-section active-section">
+                <div class="hero-section">
+                    <div class="hero-text">
+                        <h1>Web Design & <br><span>Development</span> <br>Course</h1>
+                        <p class="par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Corrupti
+                            repudiandae sed numquam,
+                            aliquam inventore placeat id <br>animi sint excepturi beatae esse laudantium ducimus <br>
+                            voluptates
+                            nulla saepe fugiat provident ut. Similique? Lorem ipsum dolor sit amet <br> consectetur
+                            adipisicing elit. Sunt neque
+                            expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur.
+                        </p>
+                        <button class="cn"><a href="#">JOIN US</a></button>
+                    </div>
+                    <div class="form">
+                        <h2>Login Here</h2>
+                        <input type="email" placeholder="Enter Email Here">
+                        <input type="password" placeholder="Enter Your Password Here">
+                        <button class="btnn"><a href="#">Login</a></button>
+                        <p class="link">Don't have an account?<br>
+                            <a href="#">Sign up here</a>
+                        </p>
+                        <p class="liw">Log in with</p>
+                        <div class="social-icons">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- ABOUT PAGE -->
+            <div id="about" class="page-section">
+                <div class="section-card">
+                    <h2>About Us</h2>
+                    <p>MrPaul is a leading platform for web design & development courses. Founded with a vision to
+                        empower aspiring developers, we provide industry-standard training, real-world projects, and
+                        career mentorship. Our mission is to bridge the gap between creativity and technology.</p>
+                    <p>With over 10,000+ students trained globally, we focus on modern frameworks, responsive design,
+                        and user-centric development. Our team consists of expert developers who have worked with
+                        top-tier companies, ensuring you get the best guidance.</p>
+                    <p>We believe in learning by doing — every course includes hands-on projects, live sessions, and
+                        24/7 support. Join us and transform your career in tech!</p>
+                </div>
+            </div>
+
+            <!-- SERVICE PAGE -->
+            <div id="service" class="page-section">
+                <div class="section-card">
+                    <h2>Our Services</h2>
+                    <p>We offer a variety of tech services tailored to help businesses and individuals thrive in the
+                        digital era.</p>
+                    <div class="service-grid">
+                        <div class="service-item">
+                            <h3>Web Design</h3>
+                            <p>Stunning, mobile-first designs with modern UI/UX principles. We create websites that
+                                engage and convert.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Dev Bootcamp</h3>
+                            <p>Intensive coding bootcamps covering HTML, CSS, JS, React, and backend technologies.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>SEO Optimization</h3>
+                            <p>Boost your rankings with our advanced SEO strategies and analytics-driven approach.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Consulting</h3>
+                            <p>Expert advice on tech stacks, performance tuning, and scalable architecture.</p>
+                        </div>
+                    </div>
+                    <p style="margin-top: 30px;">✨ Custom packages available for startups and enterprises. Let’s build
+                        something amazing!</p>
+                </div>
+            </div>
+
+            <!-- DESIGN PAGE (creative showcase) -->
+            <div id="design" class="page-section">
+                <div class="section-card">
+                    <h2>Design Philosophy</h2>
+                    <p>At MrPaul, design isn't just aesthetics — it's problem-solving. We merge creativity with
+                        functionality to craft digital experiences that leave a mark. Our design approach focuses on:
+                    </p>
+                    <ul style="margin: 20px 0 20px 30px; line-height: 1.7;">
+                        <li>🎨 <strong>Minimalistic & Modern</strong> — Clean interfaces with purposeful elements.</li>
+                        <li>📱 <strong>Fully Responsive</strong> — Seamless experience across all devices.</li>
+                        <li>⚡ <strong>Performance-Driven</strong> — Fast load times & smooth interactions.</li>
+                        <li>🧩 <strong>User-Centric</strong> — Intuitive navigation and accessibility.</li>
+                    </ul>
+                    <p>Our recent design projects include dashboards, e‑commerce platforms, and creative portfolios. We
+                        use Figma, Adobe XD, and Tailwind CSS to bring ideas to life. Want a design that stands out? We
+                        deliver pixel-perfect results.</p>
+                    <div style="background: rgba(255,114,0,0.2); padding: 15px; border-radius: 14px; margin-top: 20px;">
+                        🌟 "Design is intelligence made visible" — we live by this every day.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT PAGE -->
+            <div id="contact" class="page-section">
+                <div class="section-card">
+                    <h2>Contact Us</h2>
+                    <div class="contact-info">
+                        <div class="contact-details">
+                            <p>📍 <strong>Address:</strong> 123 Web Street, Digital City, DC 56789</p>
+                            <p>📞 <strong>Phone:</strong> +1 (800) 456-7890</p>
+                            <p>✉️ <strong>Email:</strong> hello@mrpaul.com</p>
+                            <p>🌐 <strong>Support:</strong> Mon-Fri, 9am - 6pm</p>
+                            <div class="social-icons" style="justify-content: flex-start; margin-top: 15px;">
+                                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            </div>
+                        </div>
+                        <div class="contact-form" style="flex:1">
+                            <input type="text" placeholder="Your Name" id="contactName">
+                            <input type="email" placeholder="Email Address">
+                            <textarea placeholder="Your Message..."></textarea>
+                            <button class="submit-btn" id="sendMsgBtn">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                &copy; 2026 MrPaul Web Design & Development | Empowering digital creators
+            </footer>
         </div>
     </div>
+
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        // ---------- SMOOTH PAGE NAVIGATION (single page app style) ----------
+        const sections = {
+            home: document.getElementById('home'),
+            about: document.getElementById('about'),
+            service: document.getElementById('service'),
+            design: document.getElementById('design'),
+            contact: document.getElementById('contact')
+        };
+
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function activatePage(pageId) {
+            // hide all sections
+            Object.values(sections).forEach(section => {
+                if (section) section.classList.remove('active-section');
+            });
+            // show selected
+            if (sections[pageId]) {
+                sections[pageId].classList.add('active-section');
+            }
+            // update active class on nav
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('data-page');
+                if (linkPage === pageId) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            // scroll to top smoothly when page changes
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // add click event to navbar links
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const page = link.getAttribute('data-page');
+                if (page) activatePage(page);
+            });
+        });
+
+        // JOIN US button (redirects to contact or just shows contact section)
+        const joinBtn = document.querySelector('.cn');
+        if (joinBtn) {
+            joinBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                activatePage('contact');
+            });
+        }
+
+        // sign up here link inside form -> redirect to contact (or could show signup modal)
+        const signupLink = document.querySelector('.link a');
+        if (signupLink) {
+            signupLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                activatePage('contact');
+            });
+        }
+
+        // "Send Message" in contact page (demo alert)
+        const sendBtn = document.getElementById('sendMsgBtn');
+        if (sendBtn) {
+            sendBtn.addEventListener('click', () => {
+                const nameField = document.getElementById('contactName');
+                const nameVal = nameField ? nameField.value : '';
+                alert(`Thank you ${nameVal || 'visitor'}! Your message has been sent. We'll get back to you soon.`);
+                // optional clear fields
+                if (nameField) nameField.value = '';
+                const emailField = document.querySelector('#contact input[type="email"]');
+                if (emailField) emailField.value = '';
+                const msgArea = document.querySelector('#contact textarea');
+                if (msgArea) msgArea.value = '';
+            });
+        }
+
+        // Search functionality: searches through all page content and shows alert (basic)
+        const searchButton = document.getElementById('searchBtn');
+        const searchInput = document.getElementById('searchInput');
+        function performSearch() {
+            const query = searchInput.value.trim().toLowerCase();
+            if (query === "") {
+                alert("Please enter a search term.");
+                return;
+            }
+            // collect text from currently active section (or all visible content)
+            const activeSection = document.querySelector('.page-section.active-section');
+            if (activeSection) {
+                const textContent = activeSection.innerText.toLowerCase();
+                if (textContent.includes(query)) {
+                    alert(`🔍 Found "${query}" in the current page! Check the content.`);
+                    // highlight optional: simple scroll
+                    const firstOccurrence = findTextAndHighlight(activeSection, query);
+                    if (firstOccurrence) firstOccurrence.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    alert(`No results for "${query}" on this page. Try another section.`);
+                }
+            } else {
+                alert("Search across pages: Use navbar to navigate.");
+            }
+        }
+
+        function findTextAndHighlight(container, query) {
+            // basic highlight removal first
+            const marks = container.querySelectorAll('mark');
+            marks.forEach(mark => {
+                const parent = mark.parentNode;
+                parent.replaceChild(document.createTextNode(mark.innerText), mark);
+                parent.normalize();
+            });
+            if (!query) return null;
+            const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
+                acceptNode: function (node) {
+                    if (node.parentElement.tagName === 'MARK') return NodeFilter.FILTER_REJECT;
+                    return NodeFilter.FILTER_ACCEPT;
+                }
+            });
+            const textNodes = [];
+            while (walker.nextNode()) textNodes.push(walker.currentNode);
+            let firstMarked = null;
+            textNodes.forEach(node => {
+                const text = node.nodeValue;
+                if (text && text.toLowerCase().includes(query)) {
+                    const span = document.createElement('mark');
+                    const regex = new RegExp(`(${query})`, 'gi');
+                    const newHTML = text.replace(regex, `<mark style="background:#ff7200; color:#000; border-radius:4px;">$1</mark>`);
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = newHTML;
+                    while (tempDiv.firstChild) {
+                        node.parentNode.insertBefore(tempDiv.firstChild, node);
+                    }
+                    node.parentNode.removeChild(node);
+                    if (!firstMarked) firstMarked = node.parentNode.querySelector('mark');
+                }
+            });
+            return firstMarked;
+        }
+
+        if (searchButton) {
+            searchButton.addEventListener('click', performSearch);
+        }
+        if (searchInput) {
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') performSearch();
+            });
+        }
+
+        // initial active page = home (ensure any leftover)
+        activatePage('home');
+
+        // Also handle login button demo
+        const loginBtn = document.querySelector('.btnn');
+        if (loginBtn) {
+            loginBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert("Demo Login: Welcome back! (integrate backend later)");
+            });
+        }
+
+        // Make responsive fix: adjust navbar spacing on window resize
+        window.addEventListener('resize', () => { });
+    </script>
 </body>
 
 </html>
